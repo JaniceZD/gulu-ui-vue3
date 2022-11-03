@@ -16,7 +16,6 @@
       @click="toggleMenu"
     >
       <use xlink:href="#icon-menu"></use>
-      s
     </svg>
   </div>
 </template>
