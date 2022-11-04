@@ -3,6 +3,7 @@
     class="gulu-switch"
     @click="toggle"
     :class="{ 'gulu-checked': value }"
+    :disabled="disabled"
   >
     <span></span>
   </button>
@@ -12,6 +13,10 @@
 export default {
   props: {
     value: Boolean,
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props, context) {
     const toggle = () => {
@@ -61,6 +66,9 @@ $h2: $h - 4px;
       width: $h2 + 4px;
       margin-left: -4px;
     }
+  }
+  &[disabled] {
+    cursor: not-allowed;
   }
 }
 </style>
