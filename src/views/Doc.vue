@@ -56,7 +56,9 @@ $aside-index: 10;
   flex-direction: column;
   height: 100vh;
   > .nav {
-    flex-shrink: 0;
+    flex: 0;
+    background: #fff;
+    box-shadow: 0 5px 5px rgb(51 51 51 / 10%);
   }
   > .content {
     flex-grow: 1;

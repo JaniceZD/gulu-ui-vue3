@@ -38,18 +38,19 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$color: #007974;
+$color: #05538c;
 .topnav {
-  color: $color;
-  display: flex;
-  padding: 16px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
+  color: $color;
+  padding: 12px 60px;
+  display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 1px #00000040;
   > .logo {
     max-width: 6em;
     margin-right: auto;
