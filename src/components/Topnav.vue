@@ -9,14 +9,19 @@
       <li>
         <router-link to="/doc">文档</router-link>
       </li>
+      <li>
+        <a href="https://github.com/JaniceZD" target="_blank">GitHub</a>
+      </li>
     </ul>
-    <svg
+    <div
       v-if="toggleAsideButtonVisible"
       class="toggleAside"
       @click="toggleMenu"
     >
-      <use xlink:href="#icon-menu"></use>
-    </svg>
+      <svg class="icon">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -38,7 +43,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$color: #05538c;
+$color: #69258d;
 .topnav {
   position: fixed;
   top: 0;
@@ -71,13 +76,15 @@ $color: #05538c;
 
   > .toggleAside {
     display: none;
-    width: 32px;
-    height: 32px;
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    background: fade-out(black, 0.9);
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   @media (max-width: 500px) {

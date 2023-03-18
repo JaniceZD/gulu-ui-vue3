@@ -2,7 +2,7 @@
   <div class="layout">
     <Topnav toggleAsideButtonVisible class="nav" />
     <div class="content">
-      <aside class="aside_menu" v-if="asideVisible">
+      <aside class="aside_menu" :class="{ visible: asideVisible }">
         <h2>文档</h2>
         <ol>
           <li>
