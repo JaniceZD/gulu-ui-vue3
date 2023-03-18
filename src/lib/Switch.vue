@@ -48,7 +48,7 @@ $h2: $h - 4px;
     transition: all 250ms;
   }
   &.gulu-checked {
-    background: #1890ff;
+    background: #6e02c3;
   }
   &.gulu-checked > span {
     left: calc(100% - #{$h2} - 2px);
