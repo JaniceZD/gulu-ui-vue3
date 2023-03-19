@@ -2,9 +2,10 @@
   常规使用
 </demo>
 <template>
-  <Tabs v-model:selected="x">
-    <Tab title="导航1">内容1</Tab>
-    <Tab title="导航2">内容2</Tab>
+  <Tabs v-model:selected="title">
+    <Tab title="学习">学习</Tab>
+    <Tab title="放映厅">放映厅</Tab>
+    <Tab title="玩游戏">玩游戏</Tab>
   </Tabs>
 </template>
 
@@ -17,9 +18,9 @@ export default {
     Tab,
   },
   setup() {
-    const x = ref('导航2');
+    const title = ref('放映厅');
     return {
-      x,
+      title,
     };
   },
 };
