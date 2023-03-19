@@ -43,17 +43,16 @@ export default {
 };
 </script>
 <style lang="scss">
-$h: 32px;
-$border-color: #d9d9d9;
-$color: #333;
+$border-color: #dcdfe6;
+$color: #606266;
 $blue: #40a9ff;
 $radius: 4px;
-$red: red;
+$red: #d72323;
 $grey: grey;
 .gulu-button {
   box-sizing: border-box;
-  height: $h;
-  padding: 0 12px;
+  line-height: 1;
+  padding: 12px 18px;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -65,13 +64,14 @@ $grey: grey;
   border-radius: $radius;
   box-shadow: 0 1px 0 fade-out(black, 0.95);
   transition: background 250ms;
-  & + & {
-    margin-left: 8px;
-  }
+  font-size: 14px;
+  margin: 8px;
+
   &:hover,
   &:focus {
-    color: $blue;
-    border-color: $blue;
+    color: #222831;
+    border-color: #222831;
+    background-color: #eee;
   }
   &:focus {
     outline: none;
@@ -104,28 +104,68 @@ $grey: grey;
   }
   &.gulu-size-small {
     font-size: 12px;
-    height: 20px;
-    padding: 0 4px;
+    height: 24px;
+    padding: 0 10px;
   }
   &.gulu-theme-button {
     &.gulu-level-main {
-      background: $blue;
-      color: white;
-      border-color: $blue;
+      background: #00adb5;
+      border: 1px solid #393e46;
+      color: #eee;
+
       &:hover,
       &:focus {
-        background: darken($blue, 10%);
-        border-color: darken($blue, 10%);
+        color: #00adb5;
+        border-color: #00adb5;
+        background: #fff;
+      }
+    }
+    &.gulu-level-warning {
+      background: #fce38a;
+      border: 1px solid #393e46;
+      color: #4a4444;
+
+      &:hover,
+      &:focus {
+        color: #ffc107;
+        border-color: #ffc107;
+        background: #fff;
+      }
+    }
+    &.gulu-level-success {
+      background: #28a745;
+      border: 1px solid #393e46;
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        color: #28a745;
+        border-color: #28a745;
+        background-color: #fff;
       }
     }
     &.gulu-level-danger {
       background: $red;
-      border-color: $red;
-      color: white;
+      border: 1px solid #d72323;
+      color: #eeeeee;
+
       &:hover,
       &:focus {
-        background: darken($red, 10%);
-        border-color: darken($red, 10%);
+        color: $red;
+        border-color: $red;
+        background-color: #fff;
+      }
+    }
+    &.gulu-level-info {
+      background: #52616b;
+      border: 1px solid #52616b;
+      color: #eeeeee;
+
+      &:hover,
+      &:focus {
+        color: #222831;
+        border-color: #222831;
+        background-color: #fff;
       }
     }
   }
@@ -154,12 +194,15 @@ $grey: grey;
       }
     }
   }
+  // 禁用
   &.gulu-theme-button {
     &[disabled] {
       cursor: not-allowed;
-      color: $grey;
+      color: #4a4444;
+      background: #eeeeee;
+
       &:hover {
-        border-color: $grey;
+        border-color: #4a4444;
       }
     }
   }
