@@ -42,12 +42,19 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$border-color: #d9d9d9;
+$border-color: #ebebeb;
 .demo {
   border: 1px solid $border-color;
   margin: 16px 0 32px;
+
+  &:hover {
+    box-shadow: 0 0 8px 0 rgba(232, 237, 250, 0.6),
+      0 2px 4px 0 rgba(232, 237, 250, 0.5);
+  }
+
   > h2 {
     font-size: 20px;
+    font-weight: 600;
     padding: 8px 16px;
     border-bottom: 1px solid $border-color;
   }
