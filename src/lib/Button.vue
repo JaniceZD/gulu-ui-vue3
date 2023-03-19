@@ -18,7 +18,7 @@ export default {
     },
     level: {
       type: String,
-      default: 'normal',
+      default: 'default',
     },
     disabled: {
       type: Boolean,
