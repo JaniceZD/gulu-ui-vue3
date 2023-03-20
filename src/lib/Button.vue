@@ -104,8 +104,7 @@ $grey: grey;
   }
   &.gulu-size-small {
     font-size: 12px;
-    height: 24px;
-    padding: 0 10px;
+    padding: 10px 14px;
   }
   &.gulu-theme-button {
     &.gulu-level-main {

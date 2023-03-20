@@ -4,7 +4,7 @@
 <template>
   <div>
     <div>
-      <Button size="small">超小按钮</Button>
+      <Button size="small">小型按钮</Button>
       <Button>普通按钮</Button>
       <Button size="big">大型按钮</Button>
     </div>
