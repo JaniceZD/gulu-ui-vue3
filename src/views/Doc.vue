@@ -29,6 +29,9 @@
           <li>
             <router-link to="/doc/tabs">Tabs 标签页</router-link>
           </li>
+          <li>
+            <router-link to="/doc/unfinished">未完待续...</router-link>
+          </li>
         </ol>
       </aside>
       <main>
