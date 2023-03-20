@@ -90,7 +90,7 @@ $border-color: #d9d9d9;
     border-bottom: 1px solid $border-color;
     position: relative;
     &-item {
-      padding: 8px 0;
+      padding: 8px 16px;
       margin: 0 16px;
       cursor: pointer;
       &:first-child {
@@ -111,7 +111,7 @@ $border-color: #d9d9d9;
     }
   }
   &-content {
-    padding: 8px 0;
+    padding: 20px 12px;
   }
 }
 </style>
