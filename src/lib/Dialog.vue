@@ -12,8 +12,8 @@
             <slot name="content" />
           </main>
           <footer>
-            <Button level="main" @click="ok">OK</Button>
-            <Button @click="cancel">Cancel</Button>
+            <Button size="small" @click="cancel">取消</Button>
+            <Button size="small" level="main" @click="ok">确认</Button>
           </footer>
         </div>
       </div>
@@ -76,8 +76,7 @@ $border-color: #d9d9d9;
   background: white;
   border-radius: $radius;
   box-shadow: 0 0 3px fade_out(black, 0.5);
-  min-width: 15em;
-  max-width: 90%;
+
   &-overlay {
     position: fixed;
     top: 0;
@@ -88,6 +87,7 @@ $border-color: #d9d9d9;
     z-index: 10;
   }
   &-wrapper {
+    width: 50%;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -96,7 +96,6 @@ $border-color: #d9d9d9;
   }
   > header {
     padding: 12px 16px;
-    border-bottom: 1px solid $border-color;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,7 +105,6 @@ $border-color: #d9d9d9;
     padding: 12px 16px;
   }
   > footer {
-    border-top: 1px solid $border-color;
     padding: 12px 16px;
     text-align: right;
   }
