@@ -9,3 +9,7 @@
 ## 源码
 
 如果你觉得对官网和 UI 组件源码有兴趣，那么可以访问我的 [GitHub](https://github.com/JaniceZD/gulu-ui-vue3) 查看源码
+
+## 其他
+
+柠檬 UI 还推出过 Vue2 版，如果你感兴趣，可以访问 [这里](https://janicezd.gitee.io/gulu-demo/) 查看
