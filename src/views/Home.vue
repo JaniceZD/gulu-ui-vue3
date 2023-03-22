@@ -3,10 +3,16 @@
     <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <h1>柠檬UI</h1>
-        <h2>一个厉害的 UI 框架</h2>
+        <h1>柠檬 UI</h1>
+        <h2>用心创造，持续前行。</h2>
         <p class="actions">
-          <a href="">Github</a>
+          <a class="git" href="" target="_blank">码云</a>
+          <a
+            class="git"
+            href="https://github.com/JaniceZD/gulu-ui-vue3"
+            target="_blank"
+            >Github</a
+          >
           <router-link to="/doc">开始</router-link>
         </p>
       </div>
@@ -45,21 +51,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$green: #02bcb0;
+$btn-bg: #6e02c3;
 $border-radius: 4px;
-$color: #007974;
+$color: #590089;
 .topnavAndBanner {
-  background: linear-gradient(
-    145deg,
-    rgba(227, 255, 253, 1) 0%,
-    rgba(183, 233, 230, 1) 100%
-  );
+  background: linear-gradient(145deg, #efe4ff 0%, #cebbe8 100%);
   clip-path: ellipse(80% 60% at 50% 40%);
 }
 
 .features {
-  margin: 64px auto;
-  padding: 0 16px;
+  margin: 50px auto 0;
   @media (min-width: 800px) {
     width: 800px;
     > ul {
@@ -83,7 +84,7 @@ $color: #007974;
     > li {
       margin: 16px 0;
       display: grid;
-      justify-content: start;
+      justify-content: center;
       align-content: space-between;
       grid-template-areas:
         'icon title'
@@ -98,6 +99,7 @@ $color: #007974;
       > h3 {
         grid-area: title;
         font-size: 28px;
+        font-weight: 600;
       }
       > p {
         grid-area: text;
@@ -108,19 +110,32 @@ $color: #007974;
 
 .banner {
   color: $color;
-  padding: 100px 0;
+  margin: 0 auto;
+  padding: 200px 0 150px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  > h1 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 52px;
+  }
+  > h2 {
+    text-align: right;
+    padding-right: 100px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
   > .actions {
+    text-align: center;
     padding: 8px 0;
     a {
       margin: 0 8px;
-      background: $green;
+      background: $btn-bg;
       color: white;
       display: inline-block;
-      padding: 8px 24px;
+      padding: 8px 22px;
       border-radius: $border-radius;
       &:hover {
         text-decoration: none;
