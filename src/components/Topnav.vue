@@ -2,7 +2,7 @@
   <div class="topnav">
     <router-link to="/" class="logo">
       <svg class="icon">
-        <use xlink:href="#icon-king"></use>
+        <use xlink:href="#icon-Lemon2"></use>
       </svg>
     </router-link>
     <ul class="menu">
@@ -19,7 +19,7 @@
       @click="toggleMenu"
     >
       <svg class="icon">
-        <use xlink:href="#icon-menu"></use>
+        <use xlink:href="#icon-list"></use>
       </svg>
     </div>
   </div>
@@ -63,6 +63,7 @@ $color: #69258d;
     > svg {
       width: 32px;
       height: 32px;
+      vertical-align: bottom;
     }
   }
   > .menu {
@@ -84,6 +85,7 @@ $color: #69258d;
     svg {
       width: 32px;
       height: 32px;
+      vertical-align: bottom;
     }
   }
 
