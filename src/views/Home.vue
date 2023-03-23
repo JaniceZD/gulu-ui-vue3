@@ -143,4 +143,26 @@ $color: #590089;
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .banner {
+    padding: 100px 0 50px 0;
+    > h2 {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  .features {
+    margin: 10px auto;
+    > ul {
+      padding: 10px 20px 0 22px;
+      flex-direction: column;
+      align-items: flex-start;
+      > li {
+        padding: 0 20px;
+      }
+    }
+  }
+}
 </style>
